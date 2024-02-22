@@ -2,8 +2,10 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\ProficiencyClientCommodity;
+use App\Models\ProficiencyClientPackage;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class ProficiencyClientPackageSeeder extends Seeder
 {
@@ -12,6 +14,6 @@ class ProficiencyClientPackageSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        ProficiencyClientPackage::factory()->count(4)->create();
     }
 }

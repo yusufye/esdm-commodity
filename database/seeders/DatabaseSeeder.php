@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
             CommoditySeeder::class,
             ProficiencyClientSeeder::class,
             ProficiencyClientCommoditySeeder::class,
+            ProficiencyClientPackageSeeder::class
 
         ]);
     }

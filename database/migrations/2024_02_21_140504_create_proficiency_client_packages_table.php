@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('proficiency_client_packages', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('proficiency_client_id');
             $table->unsignedBigInteger('proficiency_client_commodity_id');
             $table->unsignedBigInteger('package_id');
             $table->timestamps();
